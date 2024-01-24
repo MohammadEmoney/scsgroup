@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Emcode')
+@section('title', __('Smart Code Studio') . ' - ' . __('Home'))
 
 @section('content')
     <!-- ======= Hero Section ======= -->

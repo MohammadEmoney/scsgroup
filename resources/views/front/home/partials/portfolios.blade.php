@@ -7,7 +7,7 @@
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter="*" class="filter-active">{{ __('All') }}</li>
             @foreach ($categories as $category)
                 <li data-filter=".filter-{{ $category->name_en }}">{{ $category->name_en }}</li>
             @endforeach
