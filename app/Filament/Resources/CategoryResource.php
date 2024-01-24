@@ -35,7 +35,7 @@ class CategoryResource extends Resource
                     TextInput::make('name_en')->label('English Name')->required()->reactive()
                     ->afterStateUpdated(fn ($state, callable $set) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->label('Slug'),
-                    Select::make('parent_id')->relationship('parent', 'name'),
+                    Select::make('parent_id')->options(Category::where('parent_id', null)->pluck('name_en', 'id')->toArray() ?? ["" => "Empty"]),
                     RichEditor::make('description')
                                  ->label(__('Description'))
                                  ->disableToolbarButtons([
