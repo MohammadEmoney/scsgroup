@@ -11,10 +11,10 @@ class PortfolioController extends Controller
 {
     use SettingsTrait;
 
-    public function show(Portfolio $portfolio)
+    public function show($locale, Portfolio $portfolio)
     {
         $portfolio->increment('views');
-        $settings = $this->settings();
+        $settings = $this->settings(app()->getLocale());
         return view('front.portfolios.show', compact('portfolio', 'settings'));
     }
 }

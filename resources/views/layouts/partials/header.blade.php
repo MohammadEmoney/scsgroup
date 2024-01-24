@@ -9,7 +9,7 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="{{ route('home') }}">{{ __('Home') }}</a></li>
+                <li><a class="nav-link scrollto active" href="{{ Route::is('home') ? "#" : route('home') }}">{{ __('Home') }}</a></li>
                 <li><a class="nav-link scrollto" href="#about">{{ __('About') }}</a></li>
                 <li><a class="nav-link scrollto" href="#services">{{ __('Services') }}</a></li>
                 <li><a class="nav-link   scrollto" href="#portfolio">{{ __('Portfolio') }}</a></li>

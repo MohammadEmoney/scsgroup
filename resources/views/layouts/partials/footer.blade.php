@@ -8,33 +8,31 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h3>{{ __("Smart Code Studio") }}</h3>
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +98 938 1133 408<br>
-                        <strong>Email:</strong> info@emcode.ir<br>
+                        {!! $settings['footer']['contacts']['address'] ?? "address" !!}
+                        <strong>{{ __("Phone") }}: </strong><span dir="ltr"> {{ $settings['footer']['contacts']['phone'] ?? "+98 938 1133 408" }}</span><br>
+                        <strong>{{ __("Email") }}: </strong><span dir="ltr"> {{ $settings['footer']['contacts']['email'] ?? "info@scsgroup.ir" }}</span><br>
                     </p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>{{ __('Useful Links') }}</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('home') }}">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#about') }}">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#services') }}">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#') }}">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#') }}">Privacy policy</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('home') }}">{{ __('Home') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#about') }}">{{ __('About us') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#services') }}">{{ __('Services') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#') }}">{{ __('Terms of service') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#') }}">{{ __('Privacy policy') }}</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>{{ __('Our Services') }}</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">{{ __('Web Design') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">{{ __('Web Development') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">{{ __('Product Management') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">{{ __('Marketing') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">{{ __('Graphic Design') }}</a></li>
                     </ul>
                 </div>
 

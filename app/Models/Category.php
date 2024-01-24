@@ -19,6 +19,11 @@ class Category extends Model
         'description_en',
     ];
 
+    public function getNameAttribute($value)
+    {
+        return app()->getLocale() == 'fa' ? $value : $this->name_en;
+    }
+
     public function portfolios()
     {
         return $this->belongsToMany(Portfolio::class);

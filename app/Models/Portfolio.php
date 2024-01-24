@@ -31,6 +31,16 @@ class Portfolio extends Model implements HasMedia
         'categories' => 'array',
     ];
 
+    public function getNameAttribute($value)
+    {
+        return app()->getLocale() == 'fa' ? $value : $this->name_en;
+    }
+
+    public function getDescriptionAttribute($value)
+    {
+        return app()->getLocale() == 'fa' ? $value : $this->description_en;
+    }
+
     public function categories()
     {
         return $this->belongsToMany(Category::class)

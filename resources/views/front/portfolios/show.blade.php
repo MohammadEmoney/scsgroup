@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Emcode - ' . $portfolio->name)
+@section('title', __('Smart Code Studio') . ' - ' . $portfolio->name)
 
 @section('content')
     <!-- ======= Hero Section ======= -->
@@ -14,9 +14,9 @@
 
                 <ol>
                     <li><a href="{{ route('home') }}">{{ __('Home') }}</a></li>
-                    <li>{{ __('Portfolio Details') }}</li>
+                    <li>{{ __('Details') }} {{ $portfolio->name }}</li>
                 </ol>
-                <h2>{{ __('Portfolio Details') }}</h2>
+                <h2>{{ __('Details') }} {{ $portfolio->name }}</h2>
 
             </div>
         </section><!-- End Breadcrumbs -->
@@ -40,11 +40,6 @@
                                         <img src="{{ $media->getUrl() }}" alt="">
                                     </div>
                                 @endforeach
-
-                                {{-- <div class="swiper-slide">
-                                    <img src="{{ asset('front/assets/img/portfolio/portfolio-3.jpg') }}" alt="">
-                                </div> --}}
-
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -54,7 +49,7 @@
                         <div class="portfolio-info">
                             <h3>{{ __('Project information') }}</h3>
                             <ul>
-                                <li><strong>{{ __('Category') }}</strong>: @foreach($portfolio?->categories()?->get() as $category) {{ $category->name_en }} @if(!$loop->last) / @endif @endforeach</li>
+                                <li><strong>{{ __('Category') }}</strong>: @foreach($portfolio?->categories()?->get() as $category) {{ $category->name }} @if(!$loop->last) / @endif @endforeach</li>
                                 {{-- <li><strong>{{ __('Client') }}</strong>: {{ $portfolio->client }}</li> --}}
                                 <li><strong>{{ __('Project date') }}</strong>: {{ $portfolio->year }}</li>
                                 <li><strong>{{ __('Project URL') }}</strong>: <a href="#">{{ $portfolio->url }}</a></li>
@@ -69,7 +64,7 @@
                         <div class="portfolio-description">
                             <h2>{{ __("Details") }}</h2>
                             <p>
-                                {!! $portfolio->description_en !!}
+                                {!! $portfolio->description !!}
                             </p>
                         </div>
                     </div>
