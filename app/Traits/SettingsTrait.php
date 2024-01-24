@@ -222,6 +222,11 @@ trait SettingsTrait
                 'text' => 'Subscribe to our newsletter and stay informed about the latest web design trends, tips, and tricks. Our newsletter also includes exclusive offers and discounts on our services, so you can get the best value for your money.'
             ],
             'footer' => [
+                'contacts' => [
+                    'phone' => '+98 938 1133 408',
+                    'email' => 'info@scsgroup.ir',
+                    'address' => 'A108 Adam Street <br>New York, NY 535022<br> United States <br><br>',
+                ],
                 'social_networks' => [
                     'text' => 'Smart Code Studio is a professional web design company that specializes in creating visually stunning and user-friendly websites for businesses. From custom design to e-commerce solutions, our team of experts is dedicated to delivering exceptional results.'
                 ]
@@ -408,19 +413,19 @@ trait SettingsTrait
                 'text' => "در این بخش، شما را با تیم با استعداد خود از طراحان وب آشنا می کنیم که مشتاق ایجاد وب سایت های خیره کننده هستند که شخصیت منحصر به فرد برند شما را منعکس می کنند. اعضای تیم ما، مهارت ها و تخصص آنها را بشناسید که آنها را در صنعت برجسته می کند.",
                 'members' => [
                     [
-                        'name' => 'Mohammad Imani',
-                        'title' => 'Chief Executive Officer',
-                        'text' => 'CEO of Smart Code Studio - Creating visually stunning and user-friendly websites for businesses.',
+                        'name' => 'محمد ایمانی',
+                        'title' => 'مدیر عامل',
+                        'text' => 'مدیر عامل گروه کدهای هوشمند - ایجاد وب سایت های بصری خیره کننده و کاربر پسند برای مشاغل.',
                         'image' => 'front/assets/img/team/team-1.jpg',
                         'twitter' => 'https://twitter.com/KiasaraeiM',
                         'facebook' => 'https://www.facebook.com/mohammad.eminay/',
-                        'instagram' => 'https://www.instagram.com/Smart Code Studio.ir/',
+                        'instagram' => 'https://www.instagram.com/emcode.ir/',
                         'linkedin' => 'https://www.linkedin.com/in/mohammad-imani-08402417b/',
                     ],
                     [
                         'name' => 'Nader Golab',
-                        'title' => 'Chief Executive Officer',
-                        'text' => 'Chief Executive Officer of Smart Code Studio - Crafting exceptional websites for businesses.',
+                        'title' => 'مدیر عامل',
+                        'text' => 'مدیر عامل گروه کدهای هوشمند - ایجاد وب سایت های بصری خیره کننده و کاربر پسند برای مشاغل',
                         'image' => 'front/assets/img/team/team-2.jpg',
                         'twitter' => '#',
                         'facebook' => '#',
